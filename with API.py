@@ -115,7 +115,7 @@ def Download():
     for item in data:
         id = item['ID']
         videourl = item["VideoUrl"]
-
+        percent=0
         # Creating object of YouTube()
         getVideo = YouTube(videourl,on_progress_callback=progress_Check)
         global file_size
